@@ -10,6 +10,11 @@ namespace Fallunterscheidungen
     {
         static void Main(string[] args)
         {
+            //If Abfragen ermöglichen es einen CodeBlock zu bestimmten Bedingungen auszuführen, das bedeutet Kontrolle
+            ////if (age >= 18)
+            ////Console.WriteLine("Du bist volljährig!");
+            ////else
+            ////Console.WriteLine("Du bist minderjährig!");
         }
     }
 }
