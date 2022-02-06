@@ -27,7 +27,38 @@ namespace Fallunterscheidungen
             {
                 Console.WriteLine("Du darfst den Film nicht sehen!");
             }
+            //Ende der If-Abfragen
 
+            //Ein Boolescher Ausdruck kann nur die Werte True oder False ausgeben. 
+            //bool bedingung1 = (10 > 5);
+            //Vergleichsoperatoren
+            //      <       (Kleiner als)           (2 < 4)                         true
+            //      >       (Größer als)            (3 > 1)                         true
+            //      <=      (Kleiner/Gleich als)    (3 <= 3)                        true
+            //      >=      (Größer/Gleich als)     (2 >= 1)                        true
+            //      ==      (Gleich wie)            (4 == 4)                        true
+            //      !=      (Ungleich wie)          (4 != 8)                        true
+            //Logische -/ Verknüpfungsoperatoren
+            //      &&      Und                     ((20 > 3) && (10 == 10))        true, true = true
+            //      ||      Oder                    ((10 > 20) || (2 != 3))         false, true = true
+            //      !       Nicht                   ! ((20 > 3) && (10 == 10))      true, true = false
+
+            int alter = 18;
+            bool mobil = true;
+            bool qualifiziert = true;
+            bool test = false;
+            bool schüchtern = false;
+
+            //if ((alter >= 18) && (mobil == true) && (qualifiziert == true || test == true) && (schüchtern == false))
+            //Folgendes entspricht dem oberen Code
+            if ((alter >= 18) && (mobil) && (qualifiziert || test) && (! schüchtern))
+            {
+                Console.WriteLine("Du bekommst die Aufgabe!");
+            }
+            else
+            {
+                Console.WriteLine("Du bekommst die Aufgabe leider nicht!");
+            }
             Console.ReadKey();  
         }
     }
