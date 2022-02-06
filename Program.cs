@@ -59,6 +59,28 @@ namespace Fallunterscheidungen
             {
                 Console.WriteLine("Du bekommst die Aufgabe leider nicht!");
             }
+
+            //Switch-Blöcke ermöglichen die Prüfungen einer Variable mit einer Reihe an Werten
+            //Jedem Wert wird ein Case zugewiesen, der die Variablen mit dem dazugehörigen Wert ausführt
+
+            Console.Write("Command: ");
+            string command = Console.ReadLine();
+
+            switch(command)
+            {
+                case "SayHello":
+                    Console.WriteLine("Hallo!");
+                    break;
+                case "GoodBye":
+                    Console.WriteLine("Auf Wiedersehen!");
+                    break;
+                case "Smile":
+                    Console.WriteLine(":-)");
+                    break;
+                default:
+                    Console.WriteLine("Ungültiger Befehl!");
+                    break;
+            }
             Console.ReadKey();  
         }
     }
